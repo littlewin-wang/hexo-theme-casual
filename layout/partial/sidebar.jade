@@ -1,0 +1,9 @@
+a.logo-link(href=url_for())
+  img(src=theme.logo)
+a.author-link(href=url_for())
+  != config.author.toUpperCase()
+div.side-line
+p.side-sign
+  != theme.sign
+div.side-nav
+  include nav

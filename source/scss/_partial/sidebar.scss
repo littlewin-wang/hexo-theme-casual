@@ -1,0 +1,38 @@
+.sidebar {
+  .logo-link {
+    margin-top: 100px;
+    display: block;
+    img {
+      display: block;
+      width: 128px;
+      height: 128px;
+      margin: 0 auto;
+    }
+  }
+  .author-link {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+  .side-line {
+    width: 60%;
+    height: 1px;
+    margin: 0 auto;
+    background: rgba(204, 204, 204, 0.5);
+  }
+  .side-sign {
+    text-align: center;
+  }
+  .side-nav {
+    margin-top: 40px;
+    text-align: center;
+    ul {
+      display: inline-block;
+      li {
+        float: left;
+        margin-right: 5px;
+      }
+    }
+  }
+}

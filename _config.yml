@@ -1,0 +1,22 @@
+menu:
+  Blog: /
+  Archive: /archives/
+  GitHub: https://github.com/pinggod
+  Rss: /atom.xml
+
+favicon: /favicon.png
+logo: /favicon.png
+
+sign: hard => hard + er 
+
+# Comment
+# e.g disqus: seansun
+disqus:
+duoshuo:
+
+# Analytics
+# google-analytics:
+ga: UA-65933410-1
+
+# Copyright Infomation
+startyear: 2016

@@ -1,0 +1,30 @@
+{
+  "name": "hexo-theme-flex",
+  "version": "1.0.0",
+  "description": "A hexo theme inspired by jekyII theme flex",
+  "main": "index.js",
+  "scripts": {
+    "sass": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/littlewin-wang/hexo-theme-flex"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "flex"
+  ],
+  "author": "Littlewin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/littlewin-wang/hexo-theme-flex/issues"
+  },
+  "homepage": "https://github.com/littlewin-wang/hexo-theme-flex#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}
