@@ -15,7 +15,7 @@ mixin posts()
               != item.title
           +postInfo(item)
           .post-content
-              != item.excerpt
+            != item.excerpt
           a.read-more(href= url_for(item.path))!= __('more')
     - })
 
