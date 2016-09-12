@@ -36,6 +36,11 @@ mixin postList()
             != item.title
     - })
 
+//- Tags Page
+mixin tagList()
+  .tag
+    != tagcloud({min_font: 20, max_font: 30, amount: 100, orderby: 'count', color: true, start_color: 'gray', end_color: 'black',})
+
 //- Post Page
 mixin post(item)
   .post

@@ -1,8 +1,9 @@
 menu:
-  Blog: /
-  Archive: /archives/
-  GitHub: https://github.com/littlewin-wang
-  Rss: /atom.xml
+  home: /
+  archives: /archives
+  tags: /tags
+  about: /about
+  rss: /atom.xml
 
 favicon: /favicon.png
 logo: /favicon.png
