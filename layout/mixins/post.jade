@@ -51,8 +51,9 @@ mixin archiveList()
           - years[year]++;
     - })
     - for(item in years) {
-        li.archive-list-item!=item
-          span (#{years[item]})
+        li.archive-list-item
+          a.archive-list-link(href='/archives/#{item}')!=item
+            span (#{years[item]})
     - }
 
 
