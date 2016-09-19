@@ -1,20 +1,23 @@
-a.logo-link(href=url_for())
-  img(src=theme.logo)
-a.author-link(href=url_for())
-  != config.author.toUpperCase()
-div.side-line
-h3 NAVIGATION
-div.side-nav
+.side-logo
+  a.side-logo-link(href=url_for())
+    != config.title.toUpperCase()
+
+.side-nav
   include nav
+
 input.side-search(type="text", placeholder="Type and hit enter...")
-h4 FOLLOW ME
-ul.side-social
-  each value, key in theme.social
-    li.side-social-item
-      - var re = /^(http|https):\/\/*/gi;
-      - var tar = re.test(value) ? "_blank" : "_self"
-      a.side-social-link(href=value target=tar)
-        i(class='fa fa-#{key}')
-h4 ARCHIVES
-include ../mixins/post
-+archiveList()
+
+.side-author-info
+  span.side-author-avatar
+    img(src=theme.logo)
+  .side-author-content
+    h2.side-author-name
+    .side-author-info
+      != theme.aboutme
+    ul.side-social
+      each value, key in theme.social
+        li.side-social-item
+          - var re = /^(http|https):\/\/*/gi;
+          - var tar = re.test(value) ? "_blank" : "_self"
+          a.side-social-link(href=value target=tar)
+            i(class='fa fa-#{key}')

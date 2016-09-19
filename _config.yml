@@ -5,8 +5,8 @@ menu:
   about: /about
   rss: /atom.xml
 
-favicon: /favicon.png
 logo: /favicon.png
+aboutme: 朝着前端打怪升级中 | 目前从事闪存产品的固件和测试工具开发工作 | 多特蒙德死忠
 
 social:
   github: https://github.com/littlewin-wang
