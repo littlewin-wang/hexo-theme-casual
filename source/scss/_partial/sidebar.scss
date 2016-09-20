@@ -1,38 +1,30 @@
 .sidebar {
-  .logo-link {
-    margin-top: 100px;
-    display: block;
-    img {
-      display: block;
-      width: 128px;
-      height: 128px;
-      margin: 0 auto;
-    }
+  .h50 {
+    height: 50px;
   }
-  .author-link {
-    margin-top: 20px;
-    display: block;
-    text-align: center;
-    font-size: 20px;
+
+  .author-info {
+    margin-top: -50px;
   }
-  .side-line {
-    width: 60%;
-    height: 1px;
+
+  .author-photo {
+    display: block;
+    margin:0 auto;
+  }
+
+  .author-desc {
+    width: 80%;
     margin: 0 auto;
-    background: rgba(204, 204, 204, 0.5);
+    text-align:center;
   }
-  .side-sign {
+
+  .social-outer {
+    margin-top: 100px;
     text-align: center;
   }
-  .side-nav {
-    margin-top: 40px;
-    text-align: center;
-    ul {
-      display: inline-block;
-      li {
-        float: left;
-        margin-right: 5px;
-      }
-    }
+
+  .social-inner {
+    display: inline-block;
+    margin: 0 auto;
   }
 }

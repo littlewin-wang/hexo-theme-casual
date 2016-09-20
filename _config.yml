@@ -1,8 +1,8 @@
 menu:
   home: /
-  archives: /archives
+  archive: /archives
   tags: /tags
-  about: /about
+  info: /about
   rss: /atom.xml
 
 logo: /favicon.png

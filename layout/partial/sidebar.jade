@@ -1,23 +1,36 @@
-.side-logo
-  a.side-logo-link(href=url_for())
-    != config.title.toUpperCase()
+.ui.vertical.inverted.menu
+  .h50
 
-.side-nav
-  include nav
+  h3.ui.inverted.aligned.icon.header
+    .content
+      != config.title.toUpperCase()
 
-input.side-search(type="text", placeholder="Type and hit enter...")
+  .h50
 
-.side-author-info
-  span.side-author-avatar
-    img(src=theme.logo)
-  .side-author-content
-    h2.side-author-name
-    .side-author-info
-      != theme.aboutme
-    ul.side-social
+  .side-nav
+    include nav
+
+  .item
+    .ui.inverted.transparent.icon.input
+      input(type="text" placeholder="Search mail...")
+      i.search.icon
+
+  .h50
+
+.author-info
+  img.author-photo.ui.tiny.circular.image(src=theme.logo)
+
+  h4.ui.aligned.icon.header
+    .content
+      !=config.author
+
+  p.author-desc
+    != theme.aboutme
+
+  .social-outer
+    .social-inner
       each value, key in theme.social
-        li.side-social-item
-          - var re = /^(http|https):\/\/*/gi;
-          - var tar = re.test(value) ? "_blank" : "_self"
-          a.side-social-link(href=value target=tar)
-            i(class='fa fa-#{key}')
+        - var re = /^(http|https):\/\/*/gi;
+        - var tar = re.test(value) ? "_blank" : "_self"
+        a.social-link(href=value target=tar)
+          i(class='icon #{key}')
