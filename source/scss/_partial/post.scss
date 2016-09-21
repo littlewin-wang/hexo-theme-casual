@@ -2,28 +2,14 @@
   padding-top: 1em;
 }
 
-.post-block {
-  .post-title {
-    margin: 0.65em 0;
-    color: #2c3e50;
-    font-size: 1.5em;
+.post-info {
+  .post-date {
+    display: inline-block;
   }
+}
 
-  .post-info {
-    color: #7f8c8d;
-    margin: 1.2em 0;
-    span {
-      margin-left: 0.5rem;
-    }
-    a.post-from {
-      margin-left: 0.5rem;
-      padding: 3px 6px;
-      border-radius: 5px;
-      font-size: 12px;
-      color: white;
-      background-color: #E36B6B;
-    }
-  }
+.post-tags {
+  display: inline-block;
 }
 
 .post-content {
@@ -99,6 +85,11 @@
     background-color: #f66;
     font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   }
+}
+
+.read-more {
+  float: right;
+  margin-right: 50px;
 }
 
 #mask {

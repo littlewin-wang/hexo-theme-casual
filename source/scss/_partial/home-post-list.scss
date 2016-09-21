@@ -1,8 +1,7 @@
 .home.post-list {
   margin: 0 0;
   .post-list-item {
-    padding: 1em 0 2em;
-    border-bottom: 1px solid #ddd;
+    padding: 1em 0 1em;
     &:last-child {
       border-bottom: 0px;
     }
@@ -16,8 +15,5 @@
     & > ul {
       list-style: initial;
     }
-  }
-  .read-more {     
-    color: #42b983;
   }
 }

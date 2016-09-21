@@ -1,22 +1,36 @@
 mixin postInfo(item)
   .post-info
-    != full_date(item.date, 'll')
-    if item.from && (is_home() || is_post())
-      a.post-from(href=item.from target="_blank" title=item.from) 翻译 · 原文地址
+    .post-date
+      h6.ui.header
+        i.calendar.icon
+        .content
+          != full_date(item.date, 'll')
+
+mixin postTags(item)
+  if item.tags && item.tags.length
+    .post-tags
+      each tag in item.tags.toArray()
+        - var colorArr = ['red','orange','yellow','olive','green','teal','blue','violet','purple','pink','brown','grey','black'];
+        - var index = Math.floor(Math.random()*colorArr.length);
+          a(class="ui #{colorArr[index]} label" href= url_for(tag.path))
+            != tag.name
 
 //- Index Page
 mixin posts()
   ul.home.post-list
     - page.posts.each(function (item) {
       li.post-list-item
-        article.post-block
-          h2.post-title
+        .ui.raised.padded.text.container.segment
+          h2.ui.header
             a.post-title-link(href= url_for(item.path))
               != item.title
           +postInfo(item)
           .post-content
             != item.excerpt
-          a.read-more(href= url_for(item.path))!= __('more')
+          +postTags(item)
+          a.read-more.ui.label(href= url_for(item.path))
+            != '更多 &nbsp&nbsp'
+            i.ellipsis.horizontal.icon
     - })
 
 //- Archive Page
