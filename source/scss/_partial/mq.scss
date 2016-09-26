@@ -2,11 +2,19 @@ section.container {
     margin: 0 10px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1060px) {
   .sidebar {
     width: 252px;
     height: 100%;
     position: fixed;
+
+    .h50.mq {
+      display: none;
+    }
+
+    .ui.vertical.inverted.menu {
+      display: block;
+    }
   }
   .main {
     margin-left: 260px;
@@ -20,9 +28,20 @@ section.container {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1060px) {
   .sidebar {
     width: 100%;
+
+    .ui.vertical.inverted.menu {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      opacity: 0.85;
+    }
+
+    .a.ui.teal.big.label {
+      margin: 5px;
+    }
   }
   .main {
     width: 100%;
