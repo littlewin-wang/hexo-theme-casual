@@ -39,3 +39,23 @@ $( document ).ready(function() {
 $(window).resize(function() {
   screenAdap();
 });
+
+
+$('.post-list-item').scrollex({
+
+  // Mode: Sets Scrollex to 'middle' mode (= midpoint between top/bottom edges must fall within contact area).
+  mode: 'top-only',
+
+  // Initialize event: Add the 'inactive' class to this element as soon as Scrollex is initialized.
+
+  // Enter event: Remove the 'inactive' class from this element.
+  enter: function() {
+    $(this).transition('pulse');
+  },
+
+  // Leave event: Apply the 'inactive' class to this element.
+  leave: function() {
+    $(this).addClass('inactive');
+  }
+
+});
