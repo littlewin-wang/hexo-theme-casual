@@ -18,6 +18,17 @@ A simple and cool hexo theme with [Semantic UI](http://semantic-ui.com/) in UI d
  - Init theme, now it can be used properly.
 
 ### Installation
- 1. Init blog folder - assume your folder name is blog
- 
-     hexo init blog
+```
+//Init blog folder 
+$ hexo init blog
+$ cd blog && npm install
+
+//Add dependencies
+$ npm install --save hexo-renderer-jade hexo-renderer-scss hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
+
+//clone theme
+$ git clone https://github.com/littlewin-wang/hexo-theme-casual themes/casual
+
+//Config
+...
+```
