@@ -4,6 +4,10 @@
 
 A simple and cool hexo theme with [Semantic UI](http://semantic-ui.com/) in UI design
 
+![](http://7xpot0.com1.z0.glb.clouddn.com/16-9-28/40948516.jpg)
+
+![](http://7xpot0.com1.z0.glb.clouddn.com/16-9-28/95494836.jpg)
+
 ### [Living Demo](http://littlewin.info/)
 
 ### Feature
