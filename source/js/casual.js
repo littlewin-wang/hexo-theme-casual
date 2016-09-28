@@ -54,8 +54,5 @@ $('.post-list-item').scrollex({
   },
 
   // Leave event: Apply the 'inactive' class to this element.
-  leave: function() {
-    $(this).addClass('inactive');
-  }
 
 });

@@ -13,6 +13,14 @@ script(src="/js/casual.js")
 //- LaTex
 script(async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML")
 
+//- swiftype search
+- var ss = theme.swift_search
+if ss
+  script
+    | (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);})(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+    | _st('install','TvAnFS4AVxjiJUvrZJRB','2.0.0');
+
 //- Analytics tracking
 - var ga = theme.ga
 if ga

@@ -10,14 +10,17 @@ favicon: /favicon.png
 aboutme: 朝着前端打怪升级中 | 目前从事闪存产品的固件和测试工具开发工作 | 多特蒙德死忠
 
 social:
-  github: https://github.com/littlewin-wang
-  twitter: #
-  weibo: #
+  github: http://github.com/littlewin-wang
+  twitter: http://twitter.com/littlewin_wang
+  weibo: http://weibo.com/fredinweibo
 
 # Comment
 # e.g disqus: seansun
 disqus:
-duoshuo:
+duoshuo: littlewin
+
+# Search
+swift_search: true
 
 # Analytics
 # google-analytics:
