@@ -4,9 +4,9 @@
 
 A simple and cool hexo theme with [Semantic UI](http://semantic-ui.com/) in UI design
 
-![](http://7xpot0.com1.z0.glb.clouddn.com/16-9-28/40948516.jpg)
+![](https://cloud.githubusercontent.com/assets/14028075/18900169/bccc844a-8571-11e6-885c-e80c7bf5c8e8.png)
 
-![](http://7xpot0.com1.z0.glb.clouddn.com/16-9-28/95494836.jpg)
+![](https://cloud.githubusercontent.com/assets/14028075/18900170/be7c36c8-8571-11e6-85a8-d2bfd64ad17b.png)
 
 ### [Living Demo](http://littlewin.info/)
 
