@@ -36,3 +36,51 @@ $ git clone https://github.com/littlewin-wang/hexo-theme-casual themes/casual
 //Config
 ...
 ```
+
+### Config
+#### Add tags page
+1. In blog root dir
+```
+$ hexo new page tags
+```
+
+2. Modify source/tags/index.md
+```
+---
+title: tags
+layout: "tags"
+---
+```
+
+#### Add about page
+1. In blog root dir
+```
+$ hexo new page about
+```
+
+2. Modify source/about/index.md
+```
+---
+title: About me
+layout: "about"
+---
+//Add personal info you'd like to add
+```
+
+#### Avatar & favicon
+Add files to themes/casual/source/ and modify _config.yml
+```
+avatar: /avatar.png
+favicon: /favicon.png
+```
+
+#### Personal info and social info
+Just modify _config.yml
+```
+aboutme: 朝着前端打怪升级中 | 目前从事闪存产品的固件和测试工具开发工作 | 多特蒙德死忠
+
+social:
+  github: http://github.com/littlewin-wang
+  twitter: http://twitter.com/littlewin_wang
+  weibo: http://weibo.com/fredinweibo
+```
