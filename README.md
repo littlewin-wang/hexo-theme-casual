@@ -39,12 +39,12 @@ $ git clone https://github.com/littlewin-wang/hexo-theme-casual themes/casual
 
 ### Config
 #### Add tags page
-1. In blog root dir
+- In blog root dir
 ```
 $ hexo new page tags
 ```
 
-2. Modify source/tags/index.md
+- Modify source/tags/index.md
 ```
 ---
 title: tags
@@ -53,12 +53,12 @@ layout: "tags"
 ```
 
 #### Add about page
-1. In blog root dir
+- In blog root dir
 ```
 $ hexo new page about
 ```
 
-2. Modify source/about/index.md
+- Modify source/about/index.md
 ```
 ---
 title: About me
