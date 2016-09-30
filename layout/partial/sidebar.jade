@@ -3,7 +3,8 @@
 
   h3.ui.inverted.aligned.icon.header
     .content
-      != config.title.toUpperCase()
+      a.title-link(href=url_for())
+        != config.title.toUpperCase()
 
   .h50
 
@@ -22,7 +23,8 @@
     i.content.icon
 
 .author-info
-  img.author-photo.ui.tiny.circular.image(src=theme.avatar)
+  a.img-link(href=url_for())
+    img.author-photo.ui.tiny.circular.image(src=theme.avatar)
 
   h4.ui.aligned.icon.header
     .content
