@@ -1,4 +1,4 @@
-#  hexo-theme-casual
+# hexo-theme-casual
 
 追求简洁清爽的Hexo主题，界面设计部分采用了[Semantic UI](http://semantic-ui.com/) ~~(其实是自己做了半天发现审美捉急)~~。
 
@@ -21,7 +21,6 @@ A simple and cool hexo theme with [Semantic UI](http://semantic-ui.com/) in UI d
 ### v1.0.0 - Sep 28, 2016
  - Init theme, now it can be used properly.
 
-
 ## Installation
 ```
 //Init blog folder 
@@ -34,8 +33,11 @@ $ npm install --save hexo-renderer-jade hexo-renderer-scss hexo-generator-feed h
 //clone theme
 $ git clone https://github.com/littlewin-wang/hexo-theme-casual themes/casual
 
-//Config
-...
+//Then update your blog's _config.yml(yourblog/config.yml) to use the theme.
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: casual
 ```
 
 
@@ -121,4 +123,4 @@ if ss
 
 
 ## Contact
-Email:[littlewin.wang@gmail.com](mailto:littlewin.wang@gmail.com)
+Email: [littlewin.wang@gmail.com](mailto:littlewin.wang@gmail.com)
