@@ -121,6 +121,8 @@ if ss
 
 ```
 
+## More Info
+Pls refer to [User guide](https://github.com/littlewin-wang/hexo-theme-casual/wiki/User-guide)
 
 ## Contact
 Email: [littlewin.wang@gmail.com](mailto:littlewin.wang@gmail.com)
