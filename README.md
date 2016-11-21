@@ -20,6 +20,8 @@ A simple and cool hexo theme with [Semantic UI](http://semantic-ui.com/) in UI d
 ## Version list
 ### v1.0.0 - Sep 28, 2016
  - Init theme, now it can be used properly.
+### v1.0.1 - Nov 15, 2016
+ - Improve the style and effect in cellphone.
 
 ## Installation
 ```
