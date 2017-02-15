@@ -1,0 +1,73 @@
+/**
+ * @file icon.css
+ */
+
+@font-face {
+    font-family: "bdfont";
+    src: url("../font/bdfont.eot"); /* IE9 */
+    src: url("../font/bdfont.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../font/bdfont.woff") format("woff"), /* chrome、firefox */
+    url("../font/bdfont.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("../font/bdfont.svg#uxfonteditor") format("svg"); /* iOS 4.1- */
+}
+
+
+.icon {
+    font-family: "bdfont" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-facebook:before {
+  content: "\e001";
+}
+
+.icon-twitter:before {
+  content: "\e002";
+}
+
+.icon-weibo:before {
+  content: "\e003";
+}
+
+.icon-home:before {
+  content: "\e004";
+}
+
+.icon-down:before {
+  content: "\e005";
+}
+
+.icon-comment:before {
+  content: "\e006";
+}
+
+.icon-up:before {
+  content: "\e007";
+}
+
+.icon-left:before {
+  content: "\e008";
+}
+
+.icon-right:before {
+  content: "\e009";
+}
+
+.icon-github:before {
+  content: "\e00a";
+}
+
+.icon-folder:before {
+  content: "\e00b";
+}
+
+
+

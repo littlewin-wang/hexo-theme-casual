@@ -1,0 +1,8 @@
+.social-links
+  ul
+    each value, key in theme.social
+      - var re = /^(http|https):\/\/*/gi;
+      - var tar = re.test(value) ? "_blank" : "_self"
+      li.social-link
+        a.(href=value target=tar)
+          i(class='icon-social-#{key}')
