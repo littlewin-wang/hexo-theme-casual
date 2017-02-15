@@ -21,9 +21,12 @@ mixin posts()
     - page.posts.each(function (item) {
     article.post-list-item
       figure.post-thumbnail
-        if item.bgimage
+        - if (item.bgimage)
           a
             img(src=item.bgimage)
+        - else
+          a
+            img(src='http://7xpot0.com1.z0.glb.clouddn.com/17-2-15/25114181-file_1487146616865_f725.jpg')
       header.post-header
         .post-meta
           span.post-date
@@ -34,7 +37,7 @@ mixin posts()
         h3.post-title
           a(href= url_for(item.path))
             != item.title
-      .post-content
+      .post-excerpt
         != item.excerpt
     - })
 

@@ -66,9 +66,18 @@
 
 .post-title {
   margin: 5px 0 0 0;
+  font-weight: 400;
   a:hover {
     color: #e54e53;
     text-decoration: underline;
+  }
+}
+
+.post-excerpt {
+  p {
+    font-size: 14px;
+    margin: 0 auto;
+    color: #777;
   }
 }
 
@@ -83,7 +92,7 @@
 }
 
 .post-content {
-  margin: 0 auto;
+  margin: 10px auto;
 
   h2, h3 {
     font-size: 18px;

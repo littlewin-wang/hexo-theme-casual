@@ -1,25 +1,31 @@
-header {
-  min-height: 60px;
-
-  .logo-link {
-    float: left;
+.site-header {
+  .site-banner {
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
   }
-  
-  .nav {
-    float: right;
-    left: 80px;
-  }
-
-  .logo-link img {
-    height: 60px;
-  }
-
-  .nav-list-item {
-    display: inline-block;
-    padding: 19px  10px ;
-    a {
-      font-size: 16px;
-      line-height: 1.4;
+  .site-nav {
+    height: 46px;
+    background-color: #252626;
+    .nav {
+      height: 100%;
+      margin-left: 40px;
+      .nav-item {
+        display: inline-block;
+        color: white;
+        line-height: 46px;
+        a {
+          display: block;
+          padding: 0 20px;
+          color: #fff;
+          letter-spacing: 1.5px;
+        }
+        a:hover {
+          background-color: #444;
+        }
+      }
     }
   }
 }
