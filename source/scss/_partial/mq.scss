@@ -24,9 +24,6 @@ section.container {
     max-width: 960px;
     margin: 0 auto;
   }
-  header {
-    padding: 20px 100px;
-  }
 }
 
 @media screen and (max-width: 1060px) {
@@ -52,7 +49,6 @@ section.container {
     margin: 0 auto;
   }
   header {
-    padding: 20px 0;
     a.logo-link,
     ul.nav.nav-list {
       float: none;

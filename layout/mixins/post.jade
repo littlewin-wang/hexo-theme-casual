@@ -17,20 +17,25 @@ mixin postTags(item)
 
 //- Index Page
 mixin posts()
-  ul.home.post-list
+  .post-list
     - page.posts.each(function (item) {
-      li.post-list-item
-        .ui.raised.padded.text.container.segment
-          h2.ui.header
-            a.post-title-link(href= url_for(item.path))
-              != item.title
-          +postInfo(item)
-          .post-content
-            != item.excerpt
-          +postTags(item)
-          a.read-more.ui.label(href= url_for(item.path))
-            != '更多 &nbsp&nbsp'
-            i.ellipsis.horizontal.icon
+    article.post-list-item
+      figure.post-thumbnail
+        if item.bgimage
+          a
+            img(src=item.bgimage)
+      header.post-header
+        .post-meta
+          span.post-date
+            != full_date(item.date, 'll')
+          span.post-tag
+            a(href= url_for(item.tags.toArray()[0].path))
+              != item.tags.toArray()[0].name
+        h3.post-title
+          a(href= url_for(item.path))
+            != item.title
+      .post-content
+        != item.excerpt
     - })
 
 //- Archive Page
