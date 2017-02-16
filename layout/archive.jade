@@ -3,7 +3,7 @@ extends partial/layout
 block site_title
   != "ARCHIVE | " + config.title
 
-block container
+block content
   include mixins/post
   +postList()
 

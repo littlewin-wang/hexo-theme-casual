@@ -6,10 +6,12 @@ html(lang=config.language)
     .header
       block header
     .main
-      .wrap
-        section.container
-          block container
-        footer
-          block pagination
-          block copyright
-      include scripts
+      .container
+        div.content
+          block content
+        div.sidebar
+          block sidebar
+    footer
+      block pagination
+      block copyright
+    include scripts
