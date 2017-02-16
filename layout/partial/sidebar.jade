@@ -1,1 +1,6 @@
 include social
+
+div.recent-posts.widget
+  h3.widget-title Recent Posts:
+  .widget-content
+    != list_posts({amount:5})

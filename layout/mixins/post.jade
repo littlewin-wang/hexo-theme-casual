@@ -19,7 +19,7 @@ mixin postTags(item)
 mixin posts()
   .post-list
     - page.posts.each(function (item) {
-    article.post-list-item
+    article.post-list-article
       figure.post-thumbnail
         - if (item.bgimage)
           a

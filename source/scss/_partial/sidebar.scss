@@ -1,5 +1,6 @@
 .sidebar {
   .social-links {
+    margin-bottom: 25px;
     ul {
       list-style: none;
     }
@@ -25,6 +26,45 @@
       }
       .link-weibo {
         background-color: #dd4b39;
+      }
+    }
+  }
+  .widget {
+    margin: 0 0 20px 0;
+    padding: 20px;
+    border-radius: 2px;
+    color: #555;
+    background: #f6f6f6;
+    font-size: 0.933em;
+    word-wrap: break-word;
+    .widget-title {
+      position: relative;
+      border-bottom: 1px solid #e8e8e8;
+      padding-bottom: 4px;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        bottom: -1px;
+        border-bottom: 1px solid #e54e53;
+      }
+    }
+    .widget-content {
+      .post-list-item {
+        padding: 5px 0;
+        .post-list-link {
+          color: #777;
+          &:before {
+            padding-right: 5px;
+            font-family: "bdfont" !important;
+            font-size: 14px;
+            content: "\e009";
+            vertical-align: middle;
+          }
+          &:hover {
+            color: #e54e53;
+          }
+        }
       }
     }
   }
