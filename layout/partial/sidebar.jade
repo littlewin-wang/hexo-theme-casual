@@ -4,6 +4,10 @@ div.recent-posts.widget
   h3.widget-title Recent Posts:
   .widget-content
     != list_posts({amount:5})
+div.recent-comment.widget
+  h3.widget-title Recent Comments:
+  .widget-content
+  <ul class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-admin="1" data-excerpt-length="70" id="ds-recent-comments"></ul>
 
 div.archive-lists.widget
   h3.widget-title Archives:
