@@ -41,6 +41,25 @@ a.post-title-link:hover {
   border-bottom: 2px solid #42b983;
 }
 
+a.scroll-up {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e54e53;
+  color: #fff;
+  cursor: pointer;
+  line-height: 38px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  span {
+    display: block;
+    font-size: 26px;
+  }
+}
+
 hr {
   border: 0;
 }

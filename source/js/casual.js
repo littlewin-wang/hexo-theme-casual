@@ -1,12 +1,28 @@
-//Modify tag style by random color
-$('.tag a').addClass(function() {
-  var colorArr = ['red','orange','yellow','olive','green','teal','blue','violet','purple','pink','brown','grey','black'];
-  var index = Math.floor(Math.random()*colorArr.length);  
-  returnClass = colorArr[index] + ' ui label';
-  return returnClass;
+/**
+ * Scroll Up
+ */
+$(document).ready(function(){
+  $(".scroll-up").hide();
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 600) {
+        $('.scroll-up').fadeIn();
+      } else {
+        $('.scroll-up').fadeOut();
+      }
+    });
+    $('a.scroll-up').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 600);
+      return false;
+    });
+  });
 });
 
-//
+/**
+ * screen Adap
+ */
 function screenAdap() {
   var mq = window.matchMedia("(min-width: 1060px)");
   if(mq.matches){
@@ -31,7 +47,7 @@ function screenAdap() {
   }   
 }
 
-$( document ).ready(function() {
+$(document).ready(function() {
   screenAdap();
 });
 
