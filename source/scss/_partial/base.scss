@@ -1,6 +1,18 @@
+::-webkit-scrollbar {
+  width: 4px;
+  height: 10px;
+  background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 4px;
+  height: 10px;
+  background: #e54e53;
+}
+
 ::selection {
   color: #FFFFFF;
-  background-color: #42b983;
+  background-color: #e54e53;
 }
 
 html, body {

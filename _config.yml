@@ -2,7 +2,7 @@ menu:
   home: /
   archive: /archives
   tags: /tags
-  info: /about
+  about: /about
   rss: /atom.xml
 
 banner: http://7xpot0.com1.z0.glb.clouddn.com/17-2-15/6582823-file_1487154778995_647d.jpg
@@ -14,6 +14,8 @@ social:
   github: http://github.com/littlewin-wang
   twitter: http://twitter.com/littlewin_wang
   weibo: http://weibo.com/fredinweibo
+
+email: littlewin.wang@gmail.com
 
 # Comment
 # e.g disqus: seansun

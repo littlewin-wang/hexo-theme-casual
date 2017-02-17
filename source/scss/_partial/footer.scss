@@ -1,6 +1,46 @@
-.paginator {
-  margin: 4em 0;
-  text-align: center;
+footer {
+  .copyright {
+    padding: 20px;
+    text-align: center;
+    background-color: #303233;
+    .container {
+      overflow: hidden;
+      .col-6 {
+        width: 50%;
+        float: left;
+      }
+    }
+    .site-info {
+      color: rgba(255,255,255,0.5);
+      font-size: 14px;
+      a {
+        color: #bbb;
+        font-size: 14px;
+        font-weight: 100;
+        &:hover {
+          color: #ddd;
+          text-decoration: underline;
+        }
+      }
+      .sep {
+        padding: 0 0.5em;
+      }
+    }
+    .site-contact {
+      ul {
+        margin: 0;
+        li {
+          display: inline-block;
+          padding: 0 10px;
+        }
+      }
+      a {
+        color: #bbb;
+        font-size: 14px;
+        font-weight: 100;
+      }
+    }
+  }
 }
 
 .ds-thread,

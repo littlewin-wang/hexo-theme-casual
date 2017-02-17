@@ -1,0 +1,16 @@
+.copyright
+  - var hexoURL = "https://hexo.io/";
+  - var casualURL = "https://github.com/littlewin-wang/hexo-theme-casual";
+  - var currentDate = new Date();
+  - var year = currentDate.getFullYear();
+  - year = year == theme.startyear ? year : theme.startyear + ' - ' + year;
+  .container
+    .col-6
+      .site-info © #{year} #[span.icon.icon] #[a(href=config.url)!= config.author]
+        span.sep /
+        a(href=hexoURL, target="_blank") Powered by Hexo
+        span.sep /
+        a(href=casualURL, target="_blank") Theme by casual
+    .col-6
+      .site-contact
+        include social

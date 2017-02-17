@@ -81,6 +81,38 @@
   }
 }
 
+.paginator {
+  overflow: hidden;
+  .page-number, 
+  .space,
+  .extend.next,
+  .extend.prev {
+    display: block;
+    float: left;
+    height: 30px;
+    margin: 0 5px 5px 0;
+    padding: 0 1em;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    color: #777;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    &:hover {
+      color: #fcfcfc;
+      background-color: #e54e53;
+      border-color: transparent;
+    }
+  }
+
+  .page-number.current {
+    color: #fcfcfc;
+    background-color: #e54e53;
+    border-color: transparent;
+  }
+}
+
 .post-info {
   .post-date {
     display: inline-block;

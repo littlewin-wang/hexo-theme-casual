@@ -1,15 +1,6 @@
 mixin home()
-  - var prev = page.prev_link
-  - var next = page.next_link
   .paginator
-    if page.prev
-      a.prev(href=url_for(prev))
-        button.ui.button.teal
-          != __('prev') 
-    if page.next
-      a.next(href=url_for(next))
-        button.ui.button.teal
-          != __('next') 
+    != paginator()
 
 mixin post()
   - var prev = page.prev ? page.prev.path : false;
