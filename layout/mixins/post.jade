@@ -22,10 +22,10 @@ mixin posts()
     article.post-list-article
       figure.post-thumbnail
         - if (item.bgimage)
-          a
+          a(href= url_for(item.path))
             img(src=item.bgimage)
         - else
-          a
+          a(href= url_for(item.path))
             img(src='http://7xpot0.com1.z0.glb.clouddn.com/17-2-15/25114181-file_1487146616865_f725.jpg')
       header.post-header
         .post-meta

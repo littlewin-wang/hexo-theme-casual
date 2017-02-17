@@ -11,7 +11,7 @@
     background-color: #252626;
     .nav {
       height: 100%;
-      margin-left: 40px;
+      margin-left: 60px;
       .nav-item {
         display: inline-block;
         color: white;
@@ -21,9 +21,9 @@
           padding: 0 20px;
           color: #fff;
           letter-spacing: 1.5px;
-        }
-        a:hover {
-          background-color: #444;
+          &:hover {
+            background-color: #444;
+          }
         }
       }
     }

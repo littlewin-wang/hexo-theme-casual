@@ -17,6 +17,9 @@
           line-height: 30px;
           color: #fff;
         }
+        &:hover {
+          opacity: 0.7;
+        }
       }
       .link-github {
         background-color: #888;
@@ -50,20 +53,51 @@
       }
     }
     .widget-content {
-      .post-list-item {
+      .archive-list {
+        height: 200px;
+        overflow-y: scroll;
+      }
+      .post-list-item,
+      .archive-list-item {
         padding: 5px 0;
-        .post-list-link {
-          color: #777;
-          &:before {
-            padding-right: 5px;
-            font-family: "bdfont" !important;
-            font-size: 14px;
-            content: "\e009";
-            vertical-align: middle;
-          }
-          &:hover {
-            color: #e54e53;
-          }
+      }
+      .post-list-link,
+      .archive-list-link {
+        color: #777;
+        &:before {
+          display: inline-block;
+          padding-right: 5px;
+          font-family: "bdfont" !important;
+          font-size: 14px;
+          content: "\e009";
+          vertical-align: middle;
+        }
+        &:hover {
+          color: #e54e53;
+          text-decoration: underline;
+        }
+      }
+      .archive-list-count {
+        padding-left: 5px;
+        color: #999;
+        &:before {
+          content: '(';
+        }
+        &:after {
+          content: ')';
+        }
+      }
+      .tag-link {
+        display: inline-block;
+        margin-bottom: 0.5em;
+        padding: 0.1em 0.5em;
+        border: 1px solid #eee;
+        border-radius: 2px;
+        background-color: #fff;
+        color: #777;
+        &:hover {
+          color: #e54e53;
+          text-decoration: underline;
         }
       }
     }

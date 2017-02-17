@@ -4,3 +4,13 @@ div.recent-posts.widget
   h3.widget-title Recent Posts:
   .widget-content
     != list_posts({amount:5})
+
+div.archive-lists.widget
+  h3.widget-title Archives:
+  .widget-content
+    != list_archives()
+
+div.tag-lists.widget
+  h3.widget-title Tags:
+  .widget-content
+    != list_tags({style:a, separator:' ', show_count:false})
