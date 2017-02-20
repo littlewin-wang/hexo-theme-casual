@@ -376,13 +376,16 @@ pre {
   .post-prev,
   .post-next {
     width: 50%;
-    float: left;
     position: relative;
     padding: 0 20px;
     box-sizing: border-box;
+  }
+  .post-prev {
+    float: left;
     text-align: left;
   }
   .post-next {
+    float: right;
     text-align: right;
   }
   a.prev,
