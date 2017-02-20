@@ -29,6 +29,33 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
+body.menu-open {
+  overflow: hidden;
+  .site-header {
+    .site-nav {
+      .button-toggle {
+        background-color: transparent !important;
+        &:before {
+          opacity: 1;
+          transform: translate(0px, 6px) rotate(-45deg);
+        }
+        &:after {
+          opacity: 1;
+          transform: translate(0px, -6px) rotate(45deg);
+        }
+      }
+    }
+  }
+  .site-nav .container {
+    left: 0;
+  }
+  .site-header:before {
+    content: "";
+    opacity: 0.75;
+    visibility: visible;
+  }
+}
+
 ul.nav,
 ul.post-list,
 ul.archive-list {

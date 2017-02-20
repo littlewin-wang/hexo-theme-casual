@@ -26,3 +26,44 @@
     }
   }
 }
+
+@media screen and (min-width: 801px) {
+  .button-toggle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .site-banner {
+    display: none;
+  }
+  .site-nav .container {
+    position: fixed;
+    top: 46px;
+    left: -200px;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    background: #222;
+    z-index: 999;
+    transition: left .5s;
+    .nav-item {
+      display: block;
+    }
+  }
+  .post-thumbnail {
+    float: left;
+    max-width: 30%;
+    margin: 0 20px 0 0;
+  }
+  .post-header,
+  .post-excerpt {
+    margin-left: calc(30% + 20px);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .post-excerpt {
+    display: none;
+  }
+}
