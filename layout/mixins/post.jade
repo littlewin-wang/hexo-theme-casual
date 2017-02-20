@@ -91,6 +91,12 @@ mixin post(item)
     article.post-block
       h1.post-title
         != item.title
-      +postInfo(item)
+      span.post-date
+        != full_date(item.date, 'll')
+      if item.tags && item.tags.length
+        span.post-tag
+          each tag in item.tags.toArray()
+            a(href= url_for(tag.path))
+              != tag.name
       .post-content
         != item.content

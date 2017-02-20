@@ -24,6 +24,10 @@
   });
 })(jQuery, window, document);
 
+$(document).ready(function(){
+  $(".site-nav").sticky({topSpacing:0, zIndex: 999});
+});
+
 /**
  * Scroll Up
  */

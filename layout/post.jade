@@ -7,9 +7,18 @@ block description
   - var desc = page.desc || page.title + ' - ' + config.author;
   meta(name="description", content=desc)
 
+block header
+  header.site-header
+    .site-nav
+      span.button-toggle
+      include partial/nav
+
 block content
   include mixins/post
   +post(page)
+
+block sidebar
+  include partial/sidebar
 
 block pagination
   include mixins/paginator

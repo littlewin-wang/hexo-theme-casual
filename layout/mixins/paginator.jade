@@ -5,12 +5,17 @@ mixin home()
 mixin post()
   - var prev = page.prev ? page.prev.path : false;
   - var next = page.next ? page.next.path : false; 
-  .paginator
-    if prev
-      a.prev(href=url_for(prev))
-        button.ui.button.teal
-          != __('prev_post')
-    if next
-      a.next(href=url_for(next))
-        button.ui.button.teal
-          != __('next_post')
+  .post-paginator
+    .post-links
+      if prev
+        .post-prev
+          a.prev(href=url_for(prev))
+            != __('Previous Post')
+            span
+              != page.prev.title
+      if next
+        .post-next
+          a.next(href=url_for(prev))
+            != __('Next Post')
+            span
+              != page.next.title
