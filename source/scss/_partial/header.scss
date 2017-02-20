@@ -1,17 +1,56 @@
 .site-header {
   .site-banner {
+    position: relative;
     img {
       display: block;
       max-width: 100%;
       height: auto;
     }
+    .site-title {
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      a {
+        position: relative;
+        color: white;
+        font-size: 1.3em;
+        &:before {
+          content: attr(data-text);
+          position: absolute;
+          left: -2px;
+          text-shadow: 1px 0 inherit;
+          top: 0;
+          color: inherit;
+          background: inherit;
+          overflow: hidden;
+          clip: rect(0, 900px, 0, 0);
+          height: 100%;
+          animation: noise-anim-2 3s infinite linear alternate-reverse;
+        }
+        &:after {
+          content: attr(data-text);
+          position: absolute;
+          height: 100%;
+          left: 2px;
+          text-shadow: -1px 0 inherit;
+          top: 0;
+          color: inherit;
+          background: inherit;
+          overflow: hidden;
+          clip: rect(0, 900px, 0, 0);
+          animation: noise-anim 2s infinite linear alternate-reverse;
+        }
+      }
+    }
   }
   .site-nav {
     height: 46px;
     background-color: #252626;
-    .nav {
+    .container {
       height: 100%;
-      margin-left: 60px;
       .nav-item {
         display: inline-block;
         color: white;

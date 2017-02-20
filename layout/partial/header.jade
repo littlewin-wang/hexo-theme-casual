@@ -1,6 +1,8 @@
 header.site-header
   figure.site-banner
-    a(href=url_for())
-      img(src=theme.banner)
+    img(src=theme.banner)
+    h3.site-title
+      a(href=url_for() data-text=config.title) 
+        != config.title
   .site-nav
     include nav

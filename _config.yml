@@ -1,7 +1,6 @@
 menu:
   home: /
   archive: /archives
-  tags: /tags
   about: /about
   rss: /atom.xml
 
