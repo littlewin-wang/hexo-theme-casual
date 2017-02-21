@@ -29,7 +29,7 @@
  * Nav sticky
  */
 ;$(document).ready(function(){
-  $(".site-nav").sticky({topSpacing:0, zIndex: 999});
+  $(".site-nav").fixeditem({distance:0, pos:"top"})
 });
 
 
