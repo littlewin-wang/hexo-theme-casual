@@ -3,6 +3,10 @@
   width: 90%;
 }
 
+.archive-year {
+  border-bottom: 1px solid #eee;
+}
+
 .post-list-article {
   position: relative;
   margin-bottom: 30px;
@@ -34,6 +38,9 @@
 .post-header {
   margin-bottom: 5px;
   margin-left: 240px;
+  &.archives {
+    margin-left: 20px;
+  }
 }
 
 .post-date {
@@ -83,14 +90,10 @@
   }
 }
 
-.post-info {
-  .post-date {
-    display: inline-block;
-  }
-}
-
-.post-tags {
-  display: inline-block;
+img.bgimage {
+  display: block;
+  max-width: 100%;
+  margin: 1em 0;
 }
 
 .post-content {

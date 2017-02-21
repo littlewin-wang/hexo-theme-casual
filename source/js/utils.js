@@ -24,14 +24,19 @@
   });
 })(jQuery, window, document);
 
-$(document).ready(function(){
+
+/**
+ * Nav sticky
+ */
+;$(document).ready(function(){
   $(".site-nav").sticky({topSpacing:0, zIndex: 999});
 });
+
 
 /**
  * Scroll Up
  */
-$(document).ready(function() {
+;$(document).ready(function() {
   $(".scroll-up").hide();
   $(function () {
     $(window).scroll(function () {

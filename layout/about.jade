@@ -3,6 +3,15 @@ extends partial/layout
 block site_title
   != page.title + " | " + config.title
 
+block header
+  include partial/header
+
 block content
   include mixins/post
   +post(page)
+
+block sidebar
+  include partial/sidebar
+  
+block copyright
+  include partial/footer

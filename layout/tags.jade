@@ -1,8 +1,0 @@
-extends partial/layout
-
-block site_title
-  != "TAGS | " + config.title
-
-block content
-  include mixins/post
-  +tagList()

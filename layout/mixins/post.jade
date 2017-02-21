@@ -1,20 +1,3 @@
-mixin postInfo(item)
-  .post-info
-    .post-date
-      h6.ui.header
-        i.calendar.icon
-        .content
-          != full_date(item.date, 'll')
-
-mixin postTags(item)
-  if item.tags && item.tags.length
-    .post-tags
-      each tag in item.tags.toArray()
-        - var colorArr = ['red','orange','yellow','olive','green','teal','blue','violet','purple','pink','brown','grey','black'];
-        - var index = Math.floor(Math.random()*colorArr.length);
-          a(class="ui #{colorArr[index]} label" href= url_for(tag.path))
-            != tag.name
-
 //- Index Page
 mixin posts()
   .post-list
@@ -26,7 +9,7 @@ mixin posts()
             img(src=item.bgimage)
         - else
           a(href= url_for(item.path))
-            img(src='http://7xpot0.com1.z0.glb.clouddn.com/17-2-15/25114181-file_1487146616865_f725.jpg')
+            img(src= url_for("image/default_thumbnail.jpg"))
       header.post-header
         .post-meta
           span.post-date
@@ -41,49 +24,29 @@ mixin posts()
         != item.excerpt
     - })
 
-//- Archive Page
+//- Archive | Tags Page
 mixin postList()
-  .archive
-    .ui.animated.list
-      - var year = 0;
-      - var change = false;
-      - page.posts.each(function (item) {
-          - var itemYear = date(item.date, 'YYYY') - 0;
-          - change = year !== itemYear;
-          - year = change ? itemYear : year;
-          if change 
-            h2.archive-year!=year
-          .post-item.item
-            +postInfo(item)
-            a.post-title-link(href= url_for(item.path))
-              != item.title
-      - })
-
-mixin archiveList()
-  ul.archive-list
-    - var month = 0, year = 0;
-    - var years = {};
+  .post-list
+    - var year = 0;
     - var change = false;
-    - site.posts.each(function (item) {
-        - var itemMonth = date(item.date, 'MM') - 0;
-        - change = month !== itemMonth;
-        - month = change ? itemMonth : month;
-        if change
-          - year = date(item.date, 'YYYY') - 0;
-          - years[year] = years[year]? years[year] : {};
-          - years[year][month] = 1;
-        else
-          - year = date(item.date, 'YYYY') - 0;
-          - years[year][month]++;
+    - page.posts.each(function (item) {
+        - var itemYear = date(item.date, 'YYYY') - 0;
+        - change = year !== itemYear;
+        - year = change ? itemYear : year;
+        if change 
+          h2.archive-year!=year
+        article.post-list-article
+          header.post-header.archives
+            .post-meta
+              span.post-date
+                != full_date(item.date, 'll')
+              span.post-tag
+                a(href= url_for(item.tags.toArray()[0].path))
+                  != item.tags.toArray()[0].name
+            h3.post-title
+              a(href= url_for(item.path))
+                != item.title
     - })
-    - for(y in years) {
-      - for(m in years[y]) {
-        li.archive-list-item
-          - var timeLabel = y + '年' + m + '月'; 
-          a.archive-list-link(href='/archives/#{y}/0#{m}')!=timeLabel
-            span (#{years[y][m]})
-      - } 
-    - }
 
 //- Post Page
 mixin post(item)
@@ -98,5 +61,7 @@ mixin post(item)
           each tag in item.tags.toArray()
             a(href= url_for(tag.path))
               != tag.name
+      - if (item.bgimage)
+        img.bgimage(src=item.bgimage)
       .post-content
         != item.content

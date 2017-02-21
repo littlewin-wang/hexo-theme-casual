@@ -15,7 +15,7 @@ mixin post()
               != page.prev.title
       if next
         .post-next
-          a.next(href=url_for(prev))
+          a.next(href=url_for(next))
             != __('Next Post')
             span
               != page.next.title

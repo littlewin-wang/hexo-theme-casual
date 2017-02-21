@@ -3,9 +3,23 @@ extends partial/layout
 block site_title
   != "ARCHIVE | " + config.title
 
+block header
+  header.site-header
+    .site-nav
+      span.button-toggle
+      include partial/nav
+      form#search-form.nav-item
+        input(type="text" id="local-search-input" name="q" results="0" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off")
+        span.fa.fa-times(onclick="resetSearch()") 
+      div#local-search-result
+      p.no-result No results found
+
 block content
   include mixins/post
   +postList()
+
+block sidebar
+  include partial/sidebar
 
 block pagination
   include mixins/paginator

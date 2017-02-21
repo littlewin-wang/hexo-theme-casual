@@ -8,6 +8,9 @@
   padding: 0 20px;
   margin: auto;
   transition: all 0.5s ease-in-out 0s;
+  .content {
+    padding-bottom: 1em;
+  }
 }
 
 @media screen and (min-width: 1024px) {
