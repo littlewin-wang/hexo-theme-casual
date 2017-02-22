@@ -1,5 +1,16 @@
-prev: PREV
-next: NEXT
-prev_post: PREV
-next_post: NEXT
-more: ...more
+home: Home
+archive: Archive
+tags: Tags
+about: About
+rss: Rss
+
+search: search
+
+recent:
+  posts: Recent Posts
+  comments: Recent Comments
+
+prev_text: Prev
+next_text: Next
+prev_post: Previous Post
+next_post: Next Post

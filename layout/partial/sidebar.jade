@@ -1,21 +1,25 @@
 include social
 
 div.recent-posts.widget
-  h3.widget-title Recent Posts:
+  h3.widget-title 
+    != __('recent.posts')
   .widget-content
     != list_posts({amount:5})
 
 div.recent-comment.widget
-  h3.widget-title Recent Comments:
+  h3.widget-title 
+    != __('recent.comments')
   .widget-content
   <ul class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-admin="1" data-excerpt-length="70" id="ds-recent-comments"></ul>
 
 div.tag-lists.widget
-  h3.widget-title Tags:
+  h3.widget-title 
+    != __('tags')
   .widget-content
     != list_tags({style:a, separator:' ', show_count:false})
 
 div.archive-lists.widget
-  h3.widget-title Archives:
+  h3.widget-title 
+    != __('archive')
   .widget-content
     != list_archives()

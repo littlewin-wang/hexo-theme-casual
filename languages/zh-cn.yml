@@ -1,5 +1,16 @@
-prev: 上一页
-next: 下一页
+home: 主页
+archive: 归档
+tags: 标签
+about: 关于
+rss: 订阅
+
+search: 搜索
+
+recent:
+  posts: 近期文章
+  comments: 近期评论
+
+prev_text: 前一页
+next_text: 后一页
 prev_post: 上一篇
 next_post: 下一篇
-more: ...阅读全文

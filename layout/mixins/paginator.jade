@@ -1,6 +1,6 @@
 mixin home()
   .paginator
-    != paginator()
+    != paginator({prev_text: __('prev_text'), next_text: __('next_text')})
 
 mixin post()
   - var prev = page.prev ? page.prev.path : false;
@@ -10,12 +10,12 @@ mixin post()
       if prev
         .post-prev
           a.prev(href=url_for(prev))
-            != __('Previous Post')
+            != __('prev_post')
             span
               != page.prev.title
       if next
         .post-next
           a.next(href=url_for(next))
-            != __('Next Post')
+            != __('next_post')
             span
               != page.next.title

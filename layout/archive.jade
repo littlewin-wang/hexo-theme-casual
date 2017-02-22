@@ -9,7 +9,7 @@ block header
       span.button-toggle
       include partial/nav
       form#search-form.nav-item
-        input(type="text" id="local-search-input" name="q" results="0" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off")
+        input(type="text" id="local-search-input" name="q" results="0" placeholder=__('search') class="search form-control" autocomplete="off" autocorrect="off")
         span.fa.fa-times(onclick="resetSearch()") 
       div#local-search-result
       p.no-result No results found
