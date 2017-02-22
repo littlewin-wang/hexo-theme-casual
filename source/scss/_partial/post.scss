@@ -129,6 +129,9 @@ img.bgimage {
   a {
     color: #e54e53;
     word-break: break-all;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   blockquote {
