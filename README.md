@@ -75,11 +75,9 @@ favicon: /favicon.png
 ```
 
 
-### Personal info and social info
+### Personal social info
 Just modify _config.yml
 ```
-aboutme: 朝着前端打怪升级中 | 目前从事闪存产品的固件和测试工具开发工作 | 多特蒙德死忠
-
 social:
   github: http://github.com/littlewin-wang
   twitter: http://twitter.com/littlewin_wang
