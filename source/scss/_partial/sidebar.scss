@@ -54,6 +54,18 @@
       }
     }
     .widget-content {
+      ul {
+        list-style: none;
+      }
+      span {
+        display: inline-block;
+      }
+      a {
+        color: #e54e53;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
       .archive-list {
         height: 200px;
         overflow-y: scroll;
@@ -99,6 +111,22 @@
         &:hover {
           color: #e54e53;
           text-decoration: underline;
+        }
+      }
+      .item {
+        width: 32%
+      }
+      .wrapper {
+        display: inline-block;
+        width: 65%;
+        height: 18px;
+        vertical-align: middle;
+        border-radius: 10px;
+        background: #ccc;
+        .inner {
+          height: 100%;
+          background: #e54e53;
+          border-radius: 10px;
         }
       }
     }

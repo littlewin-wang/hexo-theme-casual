@@ -1,0 +1,45 @@
+extends partial/layout
+
+block site_title
+  != page.title + " | " + config.title
+
+block header
+  include partial/header
+
+block content
+  include mixins/post
+  +post(page)
+
+block sidebar
+  .widget
+    h3.widget-title Contact. 联系方式
+    .widget-content
+      ul
+        li 手机：18048580219
+        li Email：#[a(type="mailto" href="mailto:littlewin.wang@gmail.com") littlewin.wang@gmail.com]
+        li 微信：wxoffred
+
+  .widget
+    h3.widget-title Application. 应聘岗位
+    .widget-content
+      span 
+        != theme.application
+
+  .widget
+    h3.widget-title Tech. 技能点
+    .widget-content
+      ul
+        each value, key in theme.skill
+          li 
+            span.item 
+              != key
+            span.wrapper
+              span.inner(style="width: #{value}")
+        
+  .widget
+    .widget-content
+      p
+        != theme.introduction
+
+block copyright
+  include partial/footer

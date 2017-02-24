@@ -7,7 +7,6 @@ menu:
 banner: http://7xpot0.com1.z0.glb.clouddn.com/17-2-15/6582823-file_1487154778995_647d.jpg
 avatar: /avatar.png
 favicon: /favicon.png
-aboutme: 朝着前端打怪升级中 | 目前从事闪存产品的固件和测试工具开发工作 | 多特蒙德死忠
 
 social:
   github: http://github.com/littlewin-wang
@@ -30,3 +29,15 @@ ga: UA-65933410-1
 
 # Copyright Infomation
 startyear: 2016
+
+# Resume related
+resume: 
+
+application: 前端工程师
+
+skill:
+  JavaScript: 70%
+  HTML: 85%
+  CSS: 65%
+
+introduction: 我是一个充满活力、对前端由衷热爱、善于发现问题的前端工程师。<br/> 我目前正在寻找前端工程师的职位，希望找到一只有范的团队，一起完成有范的产品。

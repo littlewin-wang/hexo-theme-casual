@@ -68,3 +68,27 @@
 .icon-folder:before {
   content: "\e00b";
 }
+
+.icon-heart:before {
+  content: "\e00c";
+}
+
+.icon-bookmark:before {
+  content: "\e00d";
+}
+
+.icon-phone:before {
+  content: "\e00e";
+}
+
+.icon-weixin:before {
+  content: "\e00f";
+}
+
+.icon-link:before {
+  content: "\e010";
+}
+
+.icon-mail:before {
+  content: "\e011";
+}

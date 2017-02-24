@@ -3,5 +3,9 @@
     - var re = /^(http|https):\/\/*/gi;
     - var tar = re.test(value) ? "_blank" : "_self"
     .nav-item
-      a(href=value target=tar)
+      a(href=value target=tar data-text=key)
         != __(key)
+  if theme.resume
+  .nav-item
+    a(href="/resume" target="_self" data-text="resume")
+      != __('resume')
