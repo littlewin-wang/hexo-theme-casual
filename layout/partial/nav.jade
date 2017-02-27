@@ -5,7 +5,7 @@
     .nav-item
       a(href=value target=tar data-text=key)
         != __(key)
-if theme.resume
-  .nav-item
-    a(href="/resume" target="_self" data-text="resume")
-      != __('resume')
+  if theme.resume
+    .nav-item
+      a(href="/resume" target="_self" data-text="resume")
+        != __('resume')

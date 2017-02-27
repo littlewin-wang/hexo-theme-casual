@@ -21,7 +21,7 @@ disqus:
 duoshuo: littlewin
 
 # Search
-swift_search: true
+swift_search:
 
 # Analytics
 # google-analytics:
