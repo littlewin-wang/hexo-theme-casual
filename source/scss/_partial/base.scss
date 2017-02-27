@@ -303,3 +303,22 @@ table {
     text-shadow: inherit;
   }
 }
+
+@keyframes beat {
+  10% {
+    transform: scale(1.2);
+    animation-timing-function: ease-in;
+  }
+  15% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  25% {
+    transform: scale(1.1);
+    animation-timing-function: ease-in;
+  }
+  35% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
