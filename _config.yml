@@ -12,20 +12,16 @@ social:
   github: http://github.com/littlewin-wang
   twitter: http://twitter.com/littlewin_wang
   weibo: http://weibo.com/fredinweibo
-
-email: littlewin.wang@gmail.com
+  mail: mailto:littlewin.wang@gmail.com
 
 # Comment
 # e.g disqus: seansun
 disqus:
 duoshuo: littlewin
 
-# Search
-swift_search:
-
 # Analytics
 # google-analytics:
-ga: UA-65933410-1
+ga: UA-92791318-1
 
 # Copyright Infomation
 startyear: 2016

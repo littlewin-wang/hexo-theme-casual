@@ -61,6 +61,9 @@ mixin post(item)
           each tag in item.tags.toArray()
             a(href= url_for(tag.path))
               != tag.name
+      span.post-review
+        != "阅读次数 : "
+        span(data-hk-page="current") -
       - if (item.bgimage)
         img.bgimage(src=item.bgimage)
       .post-content
