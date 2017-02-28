@@ -1,11 +1,8 @@
 {
   "name": "hexo-theme-casual",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A hexo theme inspired by wordpress theme basata",
   "main": "index.js",
-  "scripts": {
-    "sass": "gulp sass"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/littlewin-wang/hexo-theme-casual"
@@ -21,10 +18,4 @@
     "url": "https://github.com/littlewin-wang/hexo-theme-casual/issues"
   },
   "homepage": "https://github.com/littlewin-wang/hexo-theme-casual#readme",
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.0.2",
-    "gulp-sass": "^2.0.4",
-    "gulp-sourcemaps": "^1.6.0"
-  }
 }

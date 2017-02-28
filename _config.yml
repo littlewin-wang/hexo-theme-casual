@@ -30,8 +30,15 @@ ga: UA-65933410-1
 # Copyright Infomation
 startyear: 2016
 
+# Support hexo-renderer-scss
+node_sass:
+  debug: false
+  outputStyle: nested
+  precision: 5
+  sourceComments: false
+
 # Resume related
-resume:
+resume: true
 
 application: 前端工程师
 
