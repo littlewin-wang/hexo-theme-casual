@@ -6,9 +6,7 @@
 
 > A simple and cool hexo theme 
 
-![](https://cloud.githubusercontent.com/assets/14028075/23158188/2bc394ba-f859-11e6-8453-3c78ecfa61fa.JPG)
-
-![](https://cloud.githubusercontent.com/assets/14028075/23158234/602ef42e-f859-11e6-8ae2-56ab9e8f96ef.JPG)
+![](https://cloud.githubusercontent.com/assets/14028075/23535689/eb98ba1a-fffa-11e6-9293-180c7b4d276c.JPG)
 
 ## [Living Demo](http://littlewin.info/)
 
