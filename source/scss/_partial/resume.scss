@@ -1,0 +1,138 @@
+.wrapper {
+  background-color: #f9f9f9;
+  color: #516064;
+  overflow: hidden;
+}
+
+.resume {
+  position: relative;
+  max-width: 950px;
+  margin: 10px auto;
+  padding: 0.2em 1em;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 0 5px -1px rgba(0,0,0,0.4);
+  background-color: #fff;
+  text-align: left;
+}
+
+.resume-content {
+  h2, h3, h4, h5, h6 {
+    margin: 0.3em 0;
+    padding-left: 1em;
+    &:after {
+      display: none;
+    }
+    a.demo {
+      position: relative;
+      margin-left: 0.5em;
+      padding: 2px;
+      padding-left: 1em;
+      vertical-align: middle;
+      border: 1px solid #e54e53;
+      border-radius: 4px;
+      &:before {
+        content: "\e010";
+        position: absolute;
+        top: 0.1em;
+        left: 0;
+        font-size: 12px;
+        font-family: "bdfont" !important;
+        color: #e54e53;
+      }
+    }
+    iframe {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+      padding-left: 0.5em;
+    }
+  }
+  h2, h3 {
+    margin: 0.8em 0;
+    font-size: 1.1em;
+    &:before {
+      content: "\e00d";
+      position: absolute;
+      top: 0;
+      left: .2rem;
+      font-family: "bdfont" !important;
+      color: #e54e53;
+    }
+  }
+  h4, h5, h6 {
+    font-size: 0.9em;
+    border-bottom: none;
+  }
+  blockquote {
+    margin: 0.5em 0;
+  }
+  ul {
+    margin: 0.2em 0;
+    padding-left: 3em;
+  }
+  ol {
+    margin: 0.2em 0;
+    list-style: none;
+    li {
+      position: relative;
+      &:before {
+        content: "\e009";
+        position: absolute;
+        top: 0;
+        left: -1.5em;
+        font-family: "bdfont" !important;
+        color: #e54e53;
+      }
+    }
+  }
+  p {
+    margin: 0.2em 0;
+  }
+}
+
+.right-sticky {
+  position: absolute;
+  top: 100px;
+  right: -40px;
+  ul {
+    list-style: none;
+    li {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      margin: 0.3em 0;
+      border-radius: 2px;
+      background-color: #e54e53;
+      text-align: center;
+      i, span {
+        display: inline-block;
+        margin: 0 auto;
+        font-size: 1.2em;
+        line-height: 40px;
+        color: #fff;
+      }
+      i {
+        font-size: 1.5em;
+      }
+      img {
+        position: absolute;
+        display: none;
+        top: -55px;
+        left: -150px;
+        width: 150px;
+        height: 150px;
+      }
+      input {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: transparent;
+        color: #fff;
+      }
+      &:hover {
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+}
