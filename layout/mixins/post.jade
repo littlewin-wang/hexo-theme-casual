@@ -41,9 +41,6 @@ mixin postList()
           span.post-title
             a(href= url_for(item.path))
               != item.title
-          span.post-tag
-            a(href= url_for(item.tags.toArray()[0].path))
-              != item.tags.toArray()[0].name
     - })
 
 //- Post Page

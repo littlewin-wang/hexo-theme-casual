@@ -7,8 +7,10 @@ block header
   include partial/header
 
 block content
-  include mixins/post
-  +post(page)
+  .post
+    article.post-block
+      .post-content
+        != page.content
 
 block sidebar
   include partial/sidebar
