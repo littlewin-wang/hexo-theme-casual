@@ -127,6 +127,9 @@
         border: none;
         background: transparent;
         color: #fff;
+        &:focus {
+          outline: none;
+        }
       }
       &:hover {
         img {
