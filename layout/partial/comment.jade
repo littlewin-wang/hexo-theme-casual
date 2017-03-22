@@ -1,17 +1,13 @@
-if theme.duoshuo
-  .ds-share(data-thread-key=page.path, data-title=page.title, data-url=page.permalink)
-    .ds-share-inline
-      ul.ds-share-icons-16
-        li(data-toggle="ds-share-icons-more")
-          span.ds-more 分享到：
-        li
-          a.ds-weibo(href="javascript:void(0);" data-service="weibo") 微博
-        li
-          a.ds-qqt(href="javascript:void(0);" data-service="qqt") 腾讯微博
-        li
-          a.ds-wechat(href="javascript:void(0);" data-service="wechat") 微信
-
-  .ds-thread(data-thread-key=page.path, data-title=page.title, data-url=page.permalink, data-author-key='1')
+if theme.cloud-tie
+  .cloud-tie-wrapper(id='cloud-tie-wrapper')
+  script.
+    var cloudTieConfig = {
+      url: document.location.href, 
+      sourceId: "",
+      productKey: "b3bab7bdfd4d4ac795cb0614a2cccf76",
+      target: "cloud-tie-wrapper"
+    };
+  script(src='https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js')
 
 if theme.disqus
   #disqus_thread
