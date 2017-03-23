@@ -6,6 +6,12 @@ div.recent-posts.widget
   .widget-content
     != list_posts({amount:5})
 
+div.recent-comment.widget
+  h3.widget-title 
+    != __('recent.comments')
+  .widget-content
+    div(id="uyan_newcmt_unit")
+
 div.tag-lists.widget
   h3.widget-title 
     != __('tags')
