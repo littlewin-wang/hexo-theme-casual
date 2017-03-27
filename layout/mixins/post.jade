@@ -15,8 +15,9 @@ mixin posts()
           span.post-date
             != full_date(item.date, 'll')
           span.post-tag
-            a(href= url_for(item.tags.toArray()[0].path))
-              != item.tags.toArray()[0].name
+            - if (item.tags.length)
+              a(href= url_for(item.tags.toArray()[0].path))
+                != item.tags.toArray()[0].name
         h3.post-title
           a(href= url_for(item.path))
             != item.title
