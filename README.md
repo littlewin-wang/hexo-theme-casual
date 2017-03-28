@@ -75,11 +75,11 @@ social:
 
 
 ### Comment
-Modify duoshuo items, value is your duoshuo id. (In theme dir)
+Modify uyan item, value is your uyan id. (In theme dir)
 ```
 # Comment
-# e.g duoshuo: seansun
-duoshuo: littlewin
+# e.g uyan: 2128137
+uyan: 2128137
 ```
 
 ### Search
